@@ -1,0 +1,1505 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <Query>select * 
+from [Peaks]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <PostSQL />
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">078d44fb-56ea-4bb7-a3d9-5002f734a44d</Connection>
+            <NoProgress>True</NoProgress>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC DSN-less
+Query=select * 
+from [Peaks]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="peakid" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="pkname" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="pkname2" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="location" size="100" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="heightm" source="File: select * &#xA;from [Peaks]" type="Int16" />
+            <Field name="heightf" source="File: select * &#xA;from [Peaks]" type="Int16" />
+            <Field name="himal" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="region" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="open" source="File: select * &#xA;from [Peaks]" type="Bool" />
+            <Field name="unlisted" source="File: select * &#xA;from [Peaks]" type="Bool" />
+            <Field name="trekking" source="File: select * &#xA;from [Peaks]" type="Bool" />
+            <Field name="trekyear" source="File: select * &#xA;from [Peaks]" type="Int16" />
+            <Field name="restrict" size="100" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="phost" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="pstatus" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="pyear" source="File: select * &#xA;from [Peaks]" type="Int16" />
+            <Field name="pseason" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="pmonth" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="pday" source="File: select * &#xA;from [Peaks]" type="Int16" />
+            <Field name="pexpid" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="pcountry" size="50" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="psummiters" size="200" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+            <Field name="psmtnote" size="150" source="File: select * &#xA;from [Peaks]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="peakid" selected="True" />
+            <SelectField field="pkname" selected="True" />
+            <SelectField field="location" selected="True" />
+            <SelectField field="heightm" selected="True" />
+            <SelectField field="heightf" selected="True" />
+            <SelectField field="himal" selected="True" />
+            <SelectField field="region" selected="True" />
+            <SelectField field="open" selected="True" />
+            <SelectField field="unlisted" selected="True" />
+            <SelectField field="phost" selected="True" />
+            <SelectField field="pstatus" selected="True" />
+            <SelectField field="pyear" selected="True" />
+            <SelectField field="pseason" selected="True" />
+            <SelectField field="pmonth" selected="True" />
+            <SelectField field="pday" selected="True" />
+            <SelectField field="pexpid" selected="True" />
+            <SelectField field="pcountry" selected="True" />
+            <SelectField field="psummiters" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="246" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"location","pyear","pseason","pmonth","pday","pexpid","pcountry","psummiters"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <Query>select * 
+from [Expedition]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <PostSQL />
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">078d44fb-56ea-4bb7-a3d9-5002f734a44d</Connection>
+            <NoProgress>True</NoProgress>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC DSN-less
+Query=select * 
+from [Expedition]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="expid" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="peakid" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="year" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="season" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="host" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="route1" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="route2" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="route3" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="route4" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="nation" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="leaders" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="sponsor" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="success1" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="success2" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="success3" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="success4" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="ascent1" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="ascent2" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="ascent3" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="ascent4" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="claimed" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="disputed" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="countries" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="approach" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="bcdate" source="File: select * &#xA;from [Expedition]" type="Date" />
+            <Field name="smtdate" source="File: select * &#xA;from [Expedition]" type="Date" />
+            <Field name="smttime" source="File: select * &#xA;from [Expedition]" type="Double" />
+            <Field name="smtdays" source="File: select * &#xA;from [Expedition]" type="Double" />
+            <Field name="totdays" source="File: select * &#xA;from [Expedition]" type="Double" />
+            <Field name="termdate" source="File: select * &#xA;from [Expedition]" type="Date" />
+            <Field name="termreason" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="termnote" size="200" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="highpoint" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="traverse" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="ski" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="parapente" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="camps" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="rope" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="totmembers" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="smtmembers" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="mdeaths" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="tothired" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="smthired" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="hdeaths" source="File: select * &#xA;from [Expedition]" type="Int16" />
+            <Field name="nohired" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2used" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2none" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2climb" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2descent" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2sleep" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2medical" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2taken" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="o2unkwn" size="300" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="othersmts" size="300" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="campsites" size="300" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="accidents" size="300" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="achievment" size="300" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="agency" size="300" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="comrte" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="stdrte" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="primrte" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="primmem" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="primref" source="File: select * &#xA;from [Expedition]" type="Bool" />
+            <Field name="primid" size="300" source="File: select * &#xA;from [Expedition]" type="V_WString" />
+            <Field name="chksum" source="File: select * &#xA;from [Expedition]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="expid" selected="True" />
+            <SelectField field="peakid" selected="True" />
+            <SelectField field="year" selected="True" />
+            <SelectField field="season" selected="True" />
+            <SelectField field="host" selected="True" />
+            <SelectField field="route1" selected="True" />
+            <SelectField field="nation" selected="True" />
+            <SelectField field="leaders" selected="True" />
+            <SelectField field="sponsor" selected="True" />
+            <SelectField field="success1" selected="True" />
+            <SelectField field="ascent1" selected="True" />
+            <SelectField field="countries" selected="True" />
+            <SelectField field="approach" selected="True" />
+            <SelectField field="bcdate" selected="True" />
+            <SelectField field="smtdate" selected="True" />
+            <SelectField field="smttime" selected="True" />
+            <SelectField field="smtdays" selected="True" />
+            <SelectField field="totdays" selected="True" />
+            <SelectField field="termreason" selected="True" />
+            <SelectField field="termnote" selected="True" />
+            <SelectField field="highpoint" selected="True" />
+            <SelectField field="ski" selected="True" />
+            <SelectField field="totmembers" selected="True" />
+            <SelectField field="smtmembers" selected="True" />
+            <SelectField field="mdeaths" selected="True" />
+            <SelectField field="o2used" selected="True" />
+            <SelectField field="othersmts" selected="True" />
+            <SelectField field="achievment" selected="True" />
+            <SelectField field="agency" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="246" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"host","route1","nation","leaders","sponsor","success1","ascent1","countries","approach","bcdate","smtdate","smttime","smtdays","totdays","termreason","termnote","highpoint","ski","totmembers","smtmembers","mdeaths","o2used","othersmts","achievment","agency"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="318" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="TRIM([termreason] + &quot; &quot; + [termnote] + &quot; &quot; + [othersmts])" field="MergedNotes" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[MergedNotes = TRIM([termreason] + " " + [termnote] + " " + [othersmts])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="expid" selected="True" />
+            <SelectField field="peakid" selected="True" />
+            <SelectField field="year" selected="True" />
+            <SelectField field="season" selected="True" />
+            <SelectField field="host" selected="True" />
+            <SelectField field="route1" selected="True" />
+            <SelectField field="nation" selected="True" />
+            <SelectField field="leaders" selected="True" />
+            <SelectField field="sponsor" selected="True" />
+            <SelectField field="success1" selected="True" />
+            <SelectField field="ascent1" selected="True" />
+            <SelectField field="countries" selected="True" />
+            <SelectField field="approach" selected="True" />
+            <SelectField field="bcdate" selected="True" />
+            <SelectField field="smtdate" selected="True" />
+            <SelectField field="smttime" selected="True" />
+            <SelectField field="smtdays" selected="True" />
+            <SelectField field="totdays" selected="True" />
+            <SelectField field="highpoint" selected="True" />
+            <SelectField field="ski" selected="True" />
+            <SelectField field="totmembers" selected="True" />
+            <SelectField field="smtmembers" selected="True" />
+            <SelectField field="mdeaths" selected="True" />
+            <SelectField field="o2used" selected="True" />
+            <SelectField field="achievment" selected="True" />
+            <SelectField field="agency" selected="True" />
+            <SelectField field="MergedNotes" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <Query>select * 
+from [Members]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <PostSQL />
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">078d44fb-56ea-4bb7-a3d9-5002f734a44d</Connection>
+            <NoProgress>True</NoProgress>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC DSN-less
+Query=select * 
+from [Members]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="expid" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="membid" source="File: select * &#xA;from [Members]" type="Int16" />
+            <Field name="peakid" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="myear" source="File: select * &#xA;from [Members]" type="Int16" />
+            <Field name="mseason" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="fname" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="lname" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="sex" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="yob" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="citizen" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="status" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="residence" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="occupation" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="leader" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="deputy" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="bconly" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="nottobc" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="support" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="disabled" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="hired" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="sherpa" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="tibetan" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="msuccess" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mclaimed" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="mdisputed" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="msolo" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="mtraverse" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="mski" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="mparapente" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mspeed" size="50" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="mhighpt" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mperhighpt" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="msmtdate1" source="File: select * &#xA;from [Members]" type="Date" />
+            <Field name="msmtdate2" source="File: select * &#xA;from [Members]" type="Date" />
+            <Field name="msmtdate3" source="File: select * &#xA;from [Members]" type="Date" />
+            <Field name="msmttime1" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="msmttime2" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="msmttime3" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="mroute1" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mroute2" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="mroute3" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="mascent1" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="mascent2" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="mascent3" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="mo2used" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mo2none" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mo2climb" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mo2descent" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="mo2sleep" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mo2medical" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="mo2note" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="death" source="File: select * &#xA;from [Members]" type="Bool" />
+            <Field name="deathdate" source="File: select * &#xA;from [Members]" type="Date" />
+            <Field name="deathtime" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="deathtype" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="deathhgtm" source="File: select * &#xA;from [Members]" type="Double" />
+            <Field name="deathclass" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="msmtbid" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="msmtterm" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="hcn" size="100" source="File: select * &#xA;from [Members]" type="V_WString" />
+            <Field name="mchksum" source="File: select * &#xA;from [Members]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="expid" selected="True" />
+            <SelectField field="membid" selected="True" />
+            <SelectField field="peakid" selected="True" />
+            <SelectField field="myear" selected="True" />
+            <SelectField field="mseason" selected="True" />
+            <SelectField field="fname" selected="True" />
+            <SelectField field="lname" selected="True" />
+            <SelectField field="sex" selected="True" />
+            <SelectField field="yob" selected="True" />
+            <SelectField field="citizen" selected="True" />
+            <SelectField field="status" selected="True" />
+            <SelectField field="residence" selected="True" />
+            <SelectField field="occupation" selected="True" />
+            <SelectField field="leader" selected="True" />
+            <SelectField field="bconly" selected="True" />
+            <SelectField field="nottobc" selected="True" />
+            <SelectField field="msuccess" selected="True" />
+            <SelectField field="mhighpt" selected="True" />
+            <SelectField field="mperhighpt" selected="True" />
+            <SelectField field="msmtdate1" selected="True" />
+            <SelectField field="msmttime1" selected="True" />
+            <SelectField field="mo2used" selected="True" />
+            <SelectField field="death" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="306" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"peakid","myear","mseason","fname","lname","sex","yob","citizen","status","residence","occupation","leader","bconly","nottobc","msuccess","mhighpt","mperhighpt","msmtdate1","msmttime1","mo2used","death"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="peakid" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="peakid" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_peakid" selected="True" rename="Right_peakid" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="330" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_30068_fda9e7542f9649eb89287ef353809cb0_\Engine_30068_1e04911c9a8b4ff3996317030059c7e9~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="expid" />
+            <Field field="peakid" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="expid" />
+            <Field field="peakid" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Right_peakid" selected="True" rename="Left_Right_peakid" input="Left_" />
+                <SelectField field="Right_expid" selected="True" rename="Right_expid" input="Right_" />
+                <SelectField field="Right_peakid" selected="True" rename="Right_peakid" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="750" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_30068_fda9e7542f9649eb89287ef353809cb0_\Engine_30068_5338be1dcc484ba6aa5095e08c4dd3a7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="666" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="totmembers" selected="True" type="Int32" size="4" />
+            <SelectField field="smtmembers" selected="True" type="Int32" size="4" />
+            <SelectField field="Right_peakid" selected="True" rename="PeakID_Members" />
+            <SelectField field="Right_peakid2" selected="True" rename="PeakID_Exped" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings>
+        <Position x="762" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"peakid","pkname","location","heightm","heightf","himal","region","open","unlisted","phost","pstatus","pyear","pseason","pmonth","pday","pexpid","pcountry","psummiters","expid","year","season","host","route1","nation","leaders","sponsor","success1","ascent1","countries","approach","bcdate","smtdate","smttime","smtdays","totdays","highpoint","ski","totmembers","smtmembers","mdeaths","o2used","achievment","agency","MergedNotes","Right_expid","membid","PeakID_Members","myear","mseason","fname","lname","sex","yob","citizen","status","residence","occupation","leader","bconly","nottobc","msuccess","mhighpt","mperhighpt","msmtdate1","msmttime1","mo2used","death"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="834" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([expid]) AND !IsNull([membid])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([expid]) AND !IsNull([membid])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_30068_fda9e7542f9649eb89287ef353809cb0_\Engine_30068_54caa9615fd346bfb40da468cb337587~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="870" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([yob]) THEN 0 ELSE [year] - [yob] ENDIF" field="Age_at_Expedition" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="IF [totmembers] &gt; 0 THEN [smtmembers] / [totmembers] * 100 ELSE 0 ENDIF" field="Success_Rate" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="IF [totmembers] &gt; 0 THEN [mdeaths] / [totmembers] * 100 ELSE 0 ENDIF" field="Death_Rate" size="4" type="Int32" enabled="true" />
+            <FormulaField expression="IF [heightm] &gt;= 8000 THEN &quot;High Altitude&quot; ELSE &quot;Standard&quot; ENDIF" field="Is_High_Altitude" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="Switch([season], &quot;Unknown&quot;, &quot;Spring&quot;, &quot;Spring&quot;, &quot;Autumn&quot;, &quot;Autumn&quot;, &quot;Summer&quot;, &quot;Summer&quot;, &quot;Winter&quot;, &quot;Winter&quot;)" field="Season_Category" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="IF [leader] = 1 THEN &quot;Leader&quot; ELSEIF [bconly] = 1 THEN &quot;Base Camp Only&quot; ELSEIF [nottobc] = 1 THEN &quot;Not to Base Camp&quot; ELSE &quot;Climber&quot; ENDIF" field="Member_Role" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="IF IsNull([mperhighpt]) THEN 0 ELSE [mperhighpt] ENDIF" field="Highpoint_Percentage" size="4" type="Int32" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Age_at_Expedition = IF IsNull([yob]) THEN 0 ELSE [year] - [yob] ENDIF
+Success_Ra...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1098" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="peakid" action="GroupBy" rename="peakid" />
+            <SummarizeField field="year" action="GroupBy" rename="year" />
+            <SummarizeField field="expid" action="GroupBy" rename="expid" />
+            <SummarizeField field="season" action="GroupBy" rename="season" />
+            <SummarizeField field="himal" action="GroupBy" rename="himal" />
+            <SummarizeField field="region" action="GroupBy" rename="region" />
+            <SummarizeField field="nation" action="GroupBy" rename="nation" />
+            <SummarizeField field="totmembers" action="Sum" rename="Sum_totmembers" />
+            <SummarizeField field="smtmembers" action="Sum" rename="Sum_smtmembers" />
+            <SummarizeField field="mdeaths" action="Sum" rename="Sum_mdeaths" />
+            <SummarizeField field="Success_Rate" action="Avg" rename="Avg_Success_Rate" />
+            <SummarizeField field="Death_Rate" action="Avg" rename="Avg_Death_Rate" />
+            <SummarizeField field="smtdays" action="Avg" rename="Avg_smtdays" />
+            <SummarizeField field="totdays" action="Avg" rename="Avg_totdays" />
+            <SummarizeField field="heightm" action="Avg" rename="Avg_heightm" />
+            <SummarizeField field="membid" action="Count" rename="Count" />
+            <SummarizeField field="mhighpt" action="Max" rename="Max_mhighpt" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1230" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Nitro\Desktop\IELTS\DOCUMENTS\GBC\Academics\BIG DATA 2\final project\Fact_Expeditions.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Fact_Expeditions.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="450" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+          <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_30068_fda9e7542f9649eb89287ef353809cb0_\Engine_30068_ce53273cf15541aeb46d424a170bbd39~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="762" y="198" width="64" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Handled Null values</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1098" y="174" width="72" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Summarize
+Aggregation
+GroupBy
+SUM
+Count
+Max</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="654" y="198" width="100" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Rename Columns
+Change Data Type</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="558" y="342" width="100" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Inner Join
+By
+expid, peakid ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="138" width="72" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Inner Join
+By peakid</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="234" y="354" width="64" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Handled Null values</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="222" y="150" width="64" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Handled Null values</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="534" width="64" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Handled Null values</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1278" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Nitro\Desktop\IELTS\DOCUMENTS\GBC\Academics\BIG DATA 2\final project\Dim_Members.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dim_Members.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1278" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Nitro\Desktop\IELTS\DOCUMENTS\GBC\Academics\BIG DATA 2\final project\Dim_Expeditions.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dim_Expeditions.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1266" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Nitro\Desktop\IELTS\DOCUMENTS\GBC\Academics\BIG DATA 2\final project\Dim_Peaks.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dim_Peaks.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1158" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="expid" selected="True" />
+            <SelectField field="year" selected="True" />
+            <SelectField field="season" selected="True" />
+            <SelectField field="host" selected="True" />
+            <SelectField field="route1" selected="True" />
+            <SelectField field="nation" selected="True" />
+            <SelectField field="leaders" selected="True" />
+            <SelectField field="sponsor" selected="True" />
+            <SelectField field="agency" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1158" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="peakid" selected="True" />
+            <SelectField field="pkname" selected="True" />
+            <SelectField field="location" selected="True" />
+            <SelectField field="heightm" selected="True" />
+            <SelectField field="heightf" selected="True" />
+            <SelectField field="himal" selected="True" />
+            <SelectField field="region" selected="True" />
+            <SelectField field="open" selected="True" />
+            <SelectField field="unlisted" selected="True" />
+            <SelectField field="phost" selected="True" />
+            <SelectField field="pstatus" selected="True" />
+            <SelectField field="pyear" selected="True" />
+            <SelectField field="pseason" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1158" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="expid" selected="True" />
+            <SelectField field="membid" selected="True" />
+            <SelectField field="fname" selected="True" />
+            <SelectField field="lname" selected="True" />
+            <SelectField field="sex" selected="True" />
+            <SelectField field="yob" selected="True" />
+            <SelectField field="citizen" selected="True" />
+            <SelectField field="residence" selected="True" />
+            <SelectField field="occupation" selected="True" />
+            <SelectField field="Member_Role" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1374" y="330" width="84" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>DIMENTION TABLES for SAAS</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1350" y="138" width="84" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Final Output</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_30068_fda9e7542f9649eb89287ef353809cb0_\Engine_30068_3123a283f4e34a67be1ba160e3eaeba3~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1182" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Nitro\AppData\Local\Temp\Alteryx\Engine_30068_fda9e7542f9649eb89287ef353809cb0_\Engine_30068_bbc2c355db1142869792e8913f1613fc~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1014" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\Nitro\Desktop\IELTS\DOCUMENTS\GBC\Academics\BIG DATA 2\final project\CombinedHimalayanExpedition.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CombinedHimalayanExpedition.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output26" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output26" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output26" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output26" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output26" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output26" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="False" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>group4_final-project</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="aa03085f-13c2-4e8f-8e52-34ad30dd2000" />
+      <Telemetry>
+        <PreviousWorkflowId value="8fde0340-db87-4463-b175-2dbaf58f3274" />
+        <OriginWorkflowId value="8fde0340-db87-4463-b175-2dbaf58f3274" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
